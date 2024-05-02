@@ -6,18 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <div class="container">
-        <div class="row">
-            <div class=" col-lg-4 card shadow-lg p-3" style="width: 18rem;">
-                <img src="assets\Image\house_default1.png" class="card-img-top" alt="...">
-                <div class="card-body p-2">
-                    <h2>{{Property.Name}}</h2>
-                    <h2>{{Property.Type}}</h2>
-                    <h2>{{Property.Price}}</h2>
-                </div>
-            </div>               
+<body>  
+    <div class="card shadow-lg" style="width: 20rem;">
+        <div class="card-img-wrapper">
+            <img src="assets\Image\house_default1.png" class="card-img-top">
+            <ul  class="list-inline text-center member-icons animate">
+                <li class="list-inline-item">
+                    <button class=" btn btn-primary">Edit</button>
+                </li>
+                <li class="list-inline-item">
+                    <button class="btn btn-primary">Save</button>
+                </li>
+            </ul>
+        </div>      
+        <div class="card-body p-2">
+            <h2>{{property.Name}}</h2>
+            <h2>{{property.Type}}</h2>
+            <h2>{{property.Price}}</h2>
         </div>
-    </div>
+    </div>               
 </body>
 </html>

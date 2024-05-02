@@ -1,0 +1,39 @@
+[
+    {
+    "Id" : 1,
+    "Name" : "Birla House",
+    "Type" : "House",
+    "Price" : 12000
+    },
+    {
+      "Id" : 2,
+      "Name" : "Tata House",
+      "Type" : "House",
+      "Price" : 18000
+    },
+    {
+        "Id" : 3,
+        "Name" : "Primerose",
+        "Type" : "Appartment",
+        "Price" : 30000
+    },
+    {
+      "Id" : 4,
+      "Name" : "Kalpak Shruti",
+      "Type" : "Appartment",
+      "Price" : 25000
+    },
+    {
+        "Id" : 5,
+        "Name" : "Nirman Aura",
+        "Type" : "Appartment",
+        "Price" : 20000
+    },
+    {
+      "Id" : 6,
+      "Name" : "Aqua Pride",
+      "Type" : "Appartment",
+      "Price" : 46000
+    }
+   
+]
