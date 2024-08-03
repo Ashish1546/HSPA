@@ -1,39 +1,51 @@
 [
     {
     "Id" : 1,
+    "SellRent" : 1,
     "Name" : "Birla House",
     "Type" : "House",
-    "Price" : 12000
+    "Price" : 12000,
+    "Image" : "Bunglow_1"
     },
     {
       "Id" : 2,
+      "SellRent" : 1,
       "Name" : "Tata House",
       "Type" : "House",
-      "Price" : 18000
+      "Price" : 18000,
+      "Image" : "Bunglow_2"
     },
     {
         "Id" : 3,
+        "SellRent" : 2,
         "Name" : "Primerose",
-        "Type" : "Appartment",
-        "Price" : 30000
+        "Type" : "Villa",
+        "Price" : 30000,
+        "Image" : "Bunglow_3"
     },
     {
       "Id" : 4,
+      "SellRent" : 1,
       "Name" : "Kalpak Shruti",
-      "Type" : "Appartment",
-      "Price" : 25000
+      "Type" : "Villa",
+      "Price" : 25000,
+      "Image" : "Bunglow_4"
     },
     {
         "Id" : 5,
+        "SellRent" : 1,
         "Name" : "Nirman Aura",
-        "Type" : "Appartment",
-        "Price" : 20000
+        "Type" : "Flat",
+        "Price" : 20000,
+        "Image" : "Bunglow_5"
     },
     {
       "Id" : 6,
+      "SellRent" : 2,
       "Name" : "Aqua Pride",
-      "Type" : "Appartment",
+      "Type" : "House",
       "Price" : 46000
+     
     }
    
 ]

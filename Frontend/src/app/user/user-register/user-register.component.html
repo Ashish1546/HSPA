@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Reactive Form -->
+    <div class="row">
+        <div class="col-6 m-auto">
+        <div class="card shadow-lg m-auto">
+            <div class="card-header">
+                <h2>Register</h2>
+            </div>
+            <div class="card-body">
+                    <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+                        <div class="form-group col-12">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" formControlName="userName">
+                            <span *ngIf ="!registrationForm.get('userName')?.valid 
+                             &&  registrationForm.get('userName')?.touched || userSubmitted" class="error-block">
+                                Please Provide Name
+                            </span>
+                        </div>
+                        <div class="form-group col-12">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="text" class="form-control" formControlName="userEmail">
+                            <span *ngIf ="!registrationForm.get('userEmail')?.valid 
+                             &&  registrationForm.get('userEmail')?.touched || userSubmitted" class="error-block">
+                                Please Provide Email
+                            </span>
+                            
+                        </div>
+                        <div class="form-group col-12">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="text" class="form-control" formControlName="userPass">
+                        </div>
+                        <div class="form-group col-12">
+                            <label for="cpassword" class="form-label">Confirm Password</label>
+                            <input type="text" class="form-control" formControlName="userCPass">
+                        </div>
+                        <div class="form-group col-12">
+                            <label for="mobile" class="form-label">Mobile</label>
+                            <input type="text" class="form-control" formControlName="userMobile">
+                        </div>
+                        <div class="form-group col-12 mt-2">
+                            <button class="btn btn-primary" style="margin-right: 10px;" type="submit">Save</button>
+                            <button class="btn btn-secondary" type="reset">Cancel</button>
+                        </div>
+                        <!-- Form Values : {{registrationForm.value | json}} <br>
+                        Form Status : {{registrationForm.valid}} -->
+                    </form>      
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

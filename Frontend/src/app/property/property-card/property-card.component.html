@@ -9,10 +9,11 @@
 <body>  
     <div class="card shadow-lg" style="width: 20rem;">
         <div class="card-img-wrapper">
-            <img src="assets\Image\house_default1.png" class="card-img-top">
+            <img *ngIf="property.Image" src="assets\Image\{{property.Image}}.png" class="card-img-top">
+            <img *ngIf="!property.Image" src="assets\Image\house_default1.png" class="card-img-top">
             <ul  class="list-inline text-center member-icons animate">
                 <li class="list-inline-item">
-                    <button class=" btn btn-primary">Edit</button>
+                    <button class=" btn btn-primary" routerLink="/property-details/{{property.Id}}">Edit</button>
                 </li>
                 <li class="list-inline-item">
                     <button class="btn btn-primary">Save</button>
