@@ -62,10 +62,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "RealEstateProject:build:production"
+              "buildTarget": "RealEstateProject:build:production"
             },
             "development": {
-              "browserTarget": "RealEstateProject:build:development"
+              "buildTarget": "RealEstateProject:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -73,7 +73,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "RealEstateProject:build"
+            "buildTarget": "RealEstateProject:build"
           }
         },
         "test": {
